@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
         /* Variáveis de Cores */
@@ -105,25 +106,38 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 20px 0;
+            padding: 15px 0;
         }
 
-        .logo {
+        .logo-container {
             display: flex;
-            flex-direction: column;
-            gap: 5px;
+            align-items: center;
+            gap: 20px;
         }
 
-        .logo h1 {
+        .logo-image {
+            height: 60px;
+            width: auto;
+        }
+
+        .logo-image img {
+            height: 100%;
+            width: auto;
+            object-fit: contain;
+        }
+
+        .logo-text h1 {
             color: var(--primary-blue);
-            font-size: 28px;
+            font-size: 18px;
             margin: 0;
+            line-height: 1.2;
         }
 
-        .logo p {
-            font-size: 12px;
+        .logo-text p {
+            font-size: 11px;
             color: var(--accent-orange);
             margin: 0;
+            font-weight: 600;
         }
 
         .navbar {
@@ -137,6 +151,7 @@
             text-decoration: none;
             font-weight: 500;
             transition: color 0.3s ease;
+            font-size: 14px;
         }
 
         .nav-link:hover {
@@ -373,6 +388,16 @@
             color: var(--white);
         }
 
+        .classico .section-header h2 {
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+
+        .classico .section-header p {
+            color: rgba(255, 255, 255, 0.95);
+            font-weight: 500;
+        }
+
         .classico-content {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -383,6 +408,7 @@
         .classico-text h3 {
             font-size: 32px;
             margin-bottom: 20px;
+            color: var(--accent-orange);
         }
 
         .classico-text p {
@@ -423,9 +449,71 @@
             font-size: 18px;
         }
 
+        /* Newsletter Section */
+        .newsletter {
+            background: linear-gradient(135deg, var(--accent-orange) 0%, var(--light-orange) 100%);
+            color: var(--white);
+        }
+
+        .newsletter .section-header h2 {
+            color: var(--white);
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+        }
+
+        .newsletter .section-header p {
+            color: rgba(255, 255, 255, 0.95);
+        }
+
+        .newsletter-form {
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .newsletter-input-group {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            min-width: 250px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 8px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 14px;
+        }
+
+        .newsletter-form button {
+            padding: 15px 40px;
+            background: var(--primary-blue);
+            color: var(--white);
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--light-blue);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .newsletter-privacy {
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.8);
+            text-align: center;
+        }
+
         /* Contact Section */
         .contact {
-            background-color: var(--light-gray);
+            background: linear-gradient(135deg, #f0f0f0 0%, #ffffff 100%);
         }
 
         .contact-content {
@@ -435,8 +523,8 @@
         }
 
         .contact-info {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            display: flex;
+            flex-direction: column;
             gap: 30px;
         }
 
@@ -444,25 +532,70 @@
             background: var(--white);
             padding: 30px;
             border-radius: 12px;
-            text-align: center;
             box-shadow: var(--shadow);
             transition: all 0.3s ease;
+            border-left: 5px solid var(--accent-orange);
         }
 
         .info-card:hover {
-            transform: translateY(-4px);
+            transform: translateX(8px);
             box-shadow: var(--shadow-lg);
         }
 
         .info-card .icon {
-            font-size: 40px;
+            font-size: 32px;
+            color: var(--accent-orange);
+            margin-bottom: 12px;
             display: block;
-            margin-bottom: 15px;
         }
 
         .info-card h4 {
             color: var(--primary-blue);
             margin-bottom: 10px;
+            font-size: 16px;
+        }
+
+        .info-card p {
+            font-size: 14px;
+            margin: 0;
+        }
+
+        .info-card a {
+            color: var(--light-blue);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .info-card a:hover {
+            color: var(--accent-orange);
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 2px solid #f0f0f0;
+        }
+
+        .social-icon {
+            width: 45px;
+            height: 45px;
+            background: linear-gradient(135deg, var(--primary-blue), var(--light-blue));
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            background: var(--accent-orange);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 15px rgba(255, 140, 0, 0.3);
         }
 
         .contact-form {
@@ -554,13 +687,23 @@
         @media (max-width: 768px) {
             .header-content {
                 flex-direction: column;
-                gap: 20px;
+                gap: 15px;
+            }
+
+            .logo-container {
+                width: 100%;
+                justify-content: center;
             }
 
             .navbar {
                 flex-direction: column;
                 width: 100%;
                 gap: 15px;
+                justify-content: center;
+            }
+
+            .nav-link {
+                text-align: center;
             }
 
             .hero h1 {
@@ -585,6 +728,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .newsletter-input-group {
+                flex-direction: column;
+            }
+
             .section {
                 padding: 60px 0;
             }
@@ -593,6 +740,14 @@
         @media (max-width: 480px) {
             .container {
                 padding: 0 15px;
+            }
+
+            .logo-text h1 {
+                font-size: 14px;
+            }
+
+            .logo-image {
+                height: 50px;
             }
 
             .hero h1 {
@@ -618,6 +773,10 @@
             .navbar {
                 display: none;
             }
+
+            .newsletter-form button {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -626,9 +785,14 @@
     <header class="header">
         <div class="container">
             <div class="header-content">
-                <div class="logo">
-                    <h1>IDFC</h1>
-                    <p>Centro de Formação a Distância</p>
+                <div class="logo-container">
+                    <div class="logo-image">
+                        <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2024/02/CFD_novo_cor2-copy.png" alt="IDFC - Centro de Formação a Distância">
+                    </div>
+                    <div class="logo-text">
+                        <h1>CENTRO DE FORMAÇÃO<br>A DISTÂNCIA</h1>
+                        <p>Instituto Diocesano da Formação Cristã</p>
+                    </div>
                 </div>
                 <nav class="navbar">
                     <a href="#quem-somos" class="nav-link">Quem Somos</a>
@@ -855,36 +1019,80 @@
         </div>
     </section>
 
+    <!-- Newsletter Section -->
+    <section id="newsletter" class="section newsletter">
+        <div class="container">
+            <div class="section-header">
+                <h2>Subscreva a Nossa Newsletter</h2>
+                <p>Fique atualizado sobre cursos e eventos do Centro de Formação a Distância</p>
+            </div>
+            <form class="newsletter-form" onsubmit="handleNewsletterSubmit(event)">
+                <div class="newsletter-input-group">
+                    <input type="email" placeholder="Introduza o seu email" required>
+                    <button type="submit">Subscrever</button>
+                </div>
+                <p class="newsletter-privacy">Respeitamos a sua privacidade. Pode cancelar a subscrição a qualquer momento.</p>
+            </form>
+        </div>
+    </section>
+
     <!-- Contacto Section -->
     <section id="contacto" class="section contact">
         <div class="container">
             <div class="section-header">
-                <h2>Entre em Contacto</h2>
-                <p>Tem dúvidas? Estamos aqui para ajudar</p>
+                <h2>Entre em Contacto Connosco</h2>
+                <p>Formação permanente e integral com metodologia adaptada à vida moderna.</p>
             </div>
             <div class="contact-content">
                 <div class="contact-info">
                     <div class="info-card">
-                        <span class="icon">📧</span>
-                        <h4>Email</h4>
-                        <p>contacto@idfc.pt</p>
-                    </div>
-                    <div class="info-card">
                         <span class="icon">📞</span>
                         <h4>Telefone</h4>
-                        <p>+351 21 XXX XXXX</p>
+                        <p><a href="tel:+351915928696">915 928 696</a></p>
                     </div>
+
+                    <div class="info-card">
+                        <span class="icon">📧</span>
+                        <h4>Email</h4>
+                        <p><a href="mailto:form.distancia@patriarcado-lisboa.pt">form.distancia@patriarcado-lisboa.pt</a></p>
+                    </div>
+
                     <div class="info-card">
                         <span class="icon">📍</span>
                         <h4>Localização</h4>
-                        <p>Lisboa, Portugal</p>
+                        <p>Mosteiro de São Vicente de Fora<br>Campo de Santa Clara<br>Lisboa 1100-472</p>
+                    </div>
+
+                    <div class="info-card">
+                        <span class="icon">🕐</span>
+                        <h4>Horário de Atendimento</h4>
+                        <p>Segunda a Sexta<br>14h30 às 17h30</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h4 style="margin-top: 0;">Redes Sociais</h4>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/patriarcado.lisboa" target="_blank" class="social-icon" title="Facebook">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/patriarcado.lisboa" target="_blank" class="social-icon" title="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@PatriarcadoLisboa" target="_blank" class="social-icon" title="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://wa.me/351915928696" target="_blank" class="social-icon" title="WhatsApp">
+                                <i class="fab fa-whatsapp"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
+
                 <form class="contact-form" onsubmit="handleFormSubmit(event)">
                     <input type="text" placeholder="Seu Nome" required>
                     <input type="email" placeholder="Seu Email" required>
                     <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
+                    <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
                 </form>
             </div>
         </div>
@@ -896,7 +1104,7 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>IDFC</h4>
-                    <p>Instituto Diocesano da Formação Cristã</p>
+                    <p>Instituto Diocesano da Formação Cristã<br>Centro de Formação a Distância</p>
                 </div>
                 <div class="footer-section">
                     <h4>Links Rápidos</h4>
@@ -905,15 +1113,16 @@
                         <li><a href="#elearning">Cursos E-Learning</a></li>
                         <li><a href="#livres">Cursos Livres</a></li>
                         <li><a href="#classico">Método Clássico</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Redes Sociais</h4>
                     <div class="social-links">
-                        <a href="https://facebook.com" target="_blank">Facebook</a>
-                        <a href="https://instagram.com" target="_blank">Instagram</a>
-                        <a href="https://youtube.com" target="_blank">YouTube</a>
-                        <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+                        <a href="https://www.facebook.com/patriarcado.lisboa" target="_blank">Facebook</a>
+                        <a href="https://www.instagram.com/patriarcado.lisboa" target="_blank">Instagram</a>
+                        <a href="https://www.youtube.com/@PatriarcadoLisboa" target="_blank">YouTube</a>
+                        <a href="https://wa.me/351915928696" target="_blank">WhatsApp</a>
                     </div>
                 </div>
             </div>
@@ -990,10 +1199,24 @@
             return regex.test(email);
         }
 
-        // Handler do formulário
+        // Handler do formulário de contacto
         function handleFormSubmit(event) {
             event.preventDefault();
             setupFormValidation();
+        }
+
+        // Handler da newsletter
+        function handleNewsletterSubmit(event) {
+            event.preventDefault();
+            const email = event.target.querySelector('input[type="email"]').value;
+            
+            if (!isValidEmail(email)) {
+                alert('Por favor, insira um email válido.');
+                return;
+            }
+            
+            alert('Obrigado por se subscrever à nossa newsletter!');
+            event.target.reset();
         }
 
         // Animações ao Scroll
@@ -1024,6 +1247,13 @@
                 feature.style.opacity = '0';
                 feature.style.animation = `fadeInUp 0.6s ease ${index * 0.1}s forwards`;
                 observer.observe(feature);
+            });
+
+            // Animar info cards
+            document.querySelectorAll('.info-card').forEach((card, index) => {
+                card.style.opacity = '0';
+                card.style.animation = `fadeInUp 0.6s ease ${index * 0.1}s forwards`;
+                observer.observe(card);
             });
         }
 
