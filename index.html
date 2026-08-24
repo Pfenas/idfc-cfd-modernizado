@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro de Formação a Distância - Instituto Diocesano da Formação Cristã</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>IDFC</h1>
+                    <p>Centro de Formação a Distância</p>
+                </div>
+                <nav class="navbar">
+                    <a href="#quem-somos" class="nav-link">Quem Somos</a>
+                    <a href="#elearning" class="nav-link">Cursos E-Learning</a>
+                    <a href="#livres" class="nav-link">Cursos Livres</a>
+                    <a href="#classico" class="nav-link">Método Clássico</a>
+                    <a href="#contacto" class="nav-link btn-primary">Contacte-nos</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Centro de Formação a Distância</h1>
+            <p>Formação permanente e integral para aprofundar a sua fé</p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="document.getElementById('elearning').scrollIntoView({behavior: 'smooth'})">Explorar Cursos</button>
+                <button class="btn btn-secondary" onclick="document.getElementById('classico').scrollIntoView({behavior: 'smooth'})">Saber Mais</button>
+            </div>
+        </div>
+        <div class="hero-bg"></div>
+    </section>
+
+    <!-- Quem Somos Section -->
+    <section id="quem-somos" class="section about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2025/08/Imagens-Formacao-Online-CFD.png" alt="Formação Online">
+                </div>
+                <div class="about-content">
+                    <h2>Quem Somos</h2>
+                    <p>O Centro de Formação a Distância proporciona uma formação permanente e integral, com uma metodologia e meios de ensino que permitem conciliar a actividade profissional e os deveres familiares ou sociais com o estudo.</p>
+                    <p>Destina-se a todos aqueles que desejem aprofundar a sua fé e preparar-se para uma acção pastoral qualificada nas suas comunidades locais.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <h4>Formação Integral</h4>
+                                <p>Metodologia adaptada à vida moderna</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <h4>Flexibilidade</h4>
+                                <p>Concilie os estudos com trabalho e família</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">✓</span>
+                            <div>
+                                <h4>Comunidade</h4>
+                                <p>Preparação para acção pastoral qualificada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos E-Learning Section -->
+    <section id="elearning" class="section elearning">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cursos E-Learning</h2>
+                <p>Formação interativa com acompanhamento pedagógico especializado</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2020/09/aaa-1024x747.jpg" alt="Mensagem Cristã I">
+                    <div class="course-info">
+                        <div class="course-status closed">INSCRIÇÕES ENCERRADAS</div>
+                        <h3>Mensagem Cristã I<br>Revelação e Fé</h3>
+                        <p>Explore os fundamentos da fé cristã</p>
+                        <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2020/08/unnamed-3.jpg" alt="Mensagem Cristã II">
+                    <div class="course-info">
+                        <div class="course-status closed">INSCRIÇÕES ENCERRADAS</div>
+                        <h3>Mensagem Cristã II<br>Bíblia e Jesus Cristo</h3>
+                        <p>Descubra a vida e mensagem de Cristo</p>
+                        <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2020/08/marchal-20131202cnsbr2852-1024x683.jpg" alt="Mensagem Cristã III">
+                    <div class="course-info">
+                        <div class="course-status closed">INSCRIÇÕES ENCERRADAS</div>
+                        <h3>Mensagem Cristã III<br>Igreja e Sacramentos</h3>
+                        <p>Compreenda o papel da Igreja e Sacramentos</p>
+                        <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2020/08/DDF42.jpg" alt="Mensagem Cristã IV">
+                    <div class="course-info">
+                        <div class="course-status closed">INSCRIÇÕES ENCERRADAS</div>
+                        <h3>Mensagem Cristã IV<br>Moral Cristã</h3>
+                        <p>Aprenda a ética cristã na vida quotidiana</p>
+                        <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2022/09/WhatsApp-Image-2022-09-05-at-16.22.32-e1662628343952.jpeg" alt="Catequista">
+                    <div class="course-info">
+                        <div class="course-status closed">INSCRIÇÕES ENCERRADAS</div>
+                        <h3>Introdução à Missão<br>do Catequista</h3>
+                        <p>Prepare-se para catequese moderna</p>
+                        <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2020/08/1264ln9_579x388.jpg" alt="Comunicação da Fé">
+                    <div class="course-info">
+                        <div class="course-status closed">INSCRIÇÕES ENCERRADAS</div>
+                        <h3>A Comunicação da Fé</h3>
+                        <p>Comunique sua fé de forma efectiva</p>
+                        <a href="#" class="btn btn-secondary">Mais Informações</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cursos Livres Section -->
+    <section id="livres" class="section livres">
+        <div class="container">
+            <div class="section-header">
+                <h2>Cursos Livres</h2>
+                <p>Abertos para todos - Aprofunde a sua fé sem qualquer custo</p>
+            </div>
+            <div class="courses-grid">
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2021/08/Mateusbloco.jpeg" alt="Evangelho Mateus">
+                    <div class="course-info">
+                        <h3>À Descoberta do Evangelho de São Mateus</h3>
+                        <p>Estude um dos evangelhos mais completos</p>
+                        <a href="#" class="btn btn-secondary">Inscrever-se</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2021/08/Marcosbloco.jpeg" alt="Evangelho Marcos">
+                    <div class="course-info">
+                        <h3>À Descoberta do Evangelho de São Marcos</h3>
+                        <p>Explore a vida de Jesus segundo Marcos</p>
+                        <a href="#" class="btn btn-secondary">Inscrever-se</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2021/11/conceito2-1024x1024.jpg" alt="Evangelho Lucas">
+                    <div class="course-info">
+                        <h3>À Descoberta do Evangelho de São Lucas</h3>
+                        <p>Conheça o evangelho do amor e compaixão</p>
+                        <a href="#" class="btn btn-secondary">Inscrever-se</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2021/08/Osactosapostolosbloco.jpeg" alt="Actos Apóstolos">
+                    <div class="course-info">
+                        <h3>Os Actos dos Apóstolos</h3>
+                        <p>Siga a história da primeira comunidade cristã</p>
+                        <a href="#" class="btn btn-secondary">Inscrever-se</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2021/08/Missaexplicadabloco.jpeg" alt="Missa Explicada">
+                    <div class="course-info">
+                        <h3>A Missa Explicada</h3>
+                        <p>Compreenda o significado de cada momento</p>
+                        <a href="#" class="btn btn-secondary">Inscrever-se</a>
+                    </div>
+                </div>
+
+                <div class="course-card">
+                    <img src="https://idfc.patriarcado-lisboa.pt/wp-content/uploads/2020/09/laudatosi-.jpg" alt="Laudato Si">
+                    <div class="course-info">
+                        <h3>Laudato Si'<br>Tudo está interligado</h3>
+                        <p>Explore a encíclica sobre ecologia integral</p>
+                        <a href="#" class="btn btn-secondary">Inscrever-se</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Método Clássico Section -->
+    <section id="classico" class="section classico">
+        <div class="container">
+            <div class="section-header">
+                <h2>Método Clássico</h2>
+                <p>Ao ritmo do aluno, sem necessidade de Internet. Inscrições abertas todo o ano letivo.</p>
+            </div>
+            <div class="classico-content">
+                <div class="classico-text">
+                    <h3>Formação Personalizada</h3>
+                    <p>O método clássico oferece uma abordagem tradicional e profunda, permitindo que estude ao seu próprio ritmo.</p>
+                    <ul class="benefits-list">
+                        <li>Material impresso de alta qualidade</li>
+                        <li>Acompanhamento personalizado</li>
+                        <li>Sem dependência de tecnologia</li>
+                        <li>Inscrições abertas durante todo o ano</li>
+                    </ul>
+                    <button class="btn btn-primary">Solicitar Informações</button>
+                </div>
+                <div class="classico-image">
+                    <div class="placeholder-image"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="section contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Entre em Contacto</h2>
+                <p>Tem dúvidas? Estamos aqui para ajudar</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <span class="icon">📧</span>
+                        <h4>Email</h4>
+                        <p>contacto@idfc.pt</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">📞</span>
+                        <h4>Telefone</h4>
+                        <p>+351 21 XXX XXXX</p>
+                    </div>
+                    <div class="info-card">
+                        <span class="icon">📍</span>
+                        <h4>Localização</h4>
+                        <p>Lisboa, Portugal</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <input type="email" placeholder="Seu Email" required>
+                    <textarea placeholder="Sua Mensagem" rows="5" required></textarea>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>IDFC</h4>
+                    <p>Instituto Diocesano da Formação Cristã</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul>
+                        <li><a href="#quem-somos">Quem Somos</a></li>
+                        <li><a href="#elearning">Cursos E-Learning</a></li>
+                        <li><a href="#livres">Cursos Livres</a></li>
+                        <li><a href="#classico">Método Clássico</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Redes Sociais</h4>
+                    <div class="social-links">
+                        <a href="https://facebook.com" target="_blank">Facebook</a>
+                        <a href="https://instagram.com" target="_blank">Instagram</a>
+                        <a href="https://youtube.com" target="_blank">YouTube</a>
+                        <a href="https://whatsapp.com" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Instituto Diocesano da Formação Cristã. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
